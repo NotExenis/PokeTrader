@@ -1,15 +1,19 @@
-import Button from 'react-bootstrap/Button';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './App.css';
-import React, { useContext } from 'react';
-import {createContext} from "vm";
-import {FORMERR} from "dns";
+import * as React from "react";
+import * as ReactDOM from "react-dom/client";
+import {
+    createBrowserRouter, Router,
+    RouterProvider,
+} from "react-router-dom";
 
-const ThemeContext = createContext(null)
-export default function MyApp(){
-    return(
-        <ThemeContext.Provider value="dark">
-            <Form />
-        </ThemeContext.Provider>
-    )
-}
+const router = createBrowserRouter([
+    {
+        path: "/",
+        element: <div>Hello Test!</div>,
+    },
+])
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+        <RouterProvider router={router}/>
+    </React.StrictMode>
+)
