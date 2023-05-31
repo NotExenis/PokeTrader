@@ -1,38 +1,18 @@
+import {Link} from "react-router-dom";
+export const sidebarID = "sidebar";
+
 export default function Root() {
     return (
         <>
             <div id="sidebar">
-                <h1>React Router Contacts</h1>
-                <div>
-                    <form id="search-form" role="search">
-                        <input
-                            id="q"
-                            aria-label="Search contacts"
-                            placeholder="Search"
-                            type="search"
-                            name="q"
-                        />
-                        <div
-                            id="search-spinner"
-                            aria-hidden
-                            hidden={true}
-                        />
-                        <div
-                            className="sr-only"
-                            aria-live="polite"
-                        ></div>
-                    </form>
-                    <form method="post">
-                        <button type="submit">New</button>
-                    </form>
-                </div>
+                <h1>Router</h1>
                 <nav>
                     <ul>
                         <li>
-                            <a href={`/contacts/1`}>Your Name</a>
+                            <Link to={'login'}>Login</Link>
                         </li>
                         <li>
-                            <a href={`/contacts/2`}>Your Friend</a>
+                            <Link to={'register'}>Register</Link>
                         </li>
                     </ul>
                 </nav>
