@@ -12,7 +12,7 @@ import {
     from 'mdb-react-ui-kit';
 import {Link} from "react-router-dom";
 
-function App() {
+function Login() {
     return (
         <MDBContainer fluid>
 
@@ -48,7 +48,7 @@ function App() {
                             </div>
 
                             <div>
-                                <p className="mb-0">Don't have an account? <a><Link className="text-white-50 fw-bold" to={'register'}>Sign up</Link></a></p>
+                                <p className="mb-0">Don't have an account? <a><Link className="text-white-50 fw-bold" to={'/register'}>Sign up</Link></a></p>
 
                             </div>
                         </MDBCardBody>
@@ -61,4 +61,4 @@ function App() {
     );
 }
 
-export default App;
+export default Login;
