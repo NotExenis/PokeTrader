@@ -19,7 +19,7 @@ const Application: React.FunctionComponent<IApplicationProps> = (props) => {
                            element={<Login />} />
                     <Route path="/register"
                            element={<Register />} />
-                </Routes>
+                 </Routes>
         </BrowserRouter>
     );
 };
