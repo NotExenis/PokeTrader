@@ -11,6 +11,8 @@ import {
 }
     from 'mdb-react-ui-kit';
 import {Link} from "react-router-dom";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function Login() {
     return (
@@ -35,8 +37,8 @@ function Login() {
 
                             <div className='d-flex flex-row mt-3 mb-5'>
                                 <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
-                                    <MDBIcon fab icon='facebook-f' size="lg"/>
                                 </MDBBtn>
+                                <MDBIcon fab icon='facebook-f' size="lg"/>
 
                                 <MDBBtn tag='a' color='none' className='m-3' style={{ color: 'white' }}>
                                     <MDBIcon fab icon='twitter' size="lg"/>

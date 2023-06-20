@@ -7,6 +7,7 @@ import Register from "./pages/register/register";
 import Root from "./routes/root";
 import ErrorPage from "./errors/errorpage";
 
+
 export interface IApplicationProps {}
 
 const Application: React.FunctionComponent<IApplicationProps> = (props) => {
